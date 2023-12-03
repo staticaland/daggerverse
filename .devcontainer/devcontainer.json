@@ -8,7 +8,8 @@
 		"vscode": {
 			"extensions": [
 				"golang.go",
-				"Dagger.dagger"
+				"GitHub.copilot",
+				"GitHub.copilot-chat"
 			]
 		}
 	}
