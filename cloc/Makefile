@@ -1,4 +1,4 @@
-clocl:
+cloc:
 	dagger call cloc-dir --directory-arg='.'
 
 json:
