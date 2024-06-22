@@ -56,3 +56,19 @@ jobs:
           verb: call
           args: cloc-dir --directory-arg='.' --yaml-output
 ```
+
+## Aligning Dagger module with Renovate GitHub Action
+
+Let's consider [the Renovate GitHub Action](https://github.com/renovatebot/github-action):
+
+```yml
+      - name: Run Renovate
+        uses: renovatebot/github-action@21d88b0bf0183abcee15f990011cca090dfc47dd # v40.1.12
+        with:
+          token: '${{ steps.t.outputs.token }}'
+          configurationFile: '.github/renovate.json'
+          renovate-version: '${{ env.RENOVATE_VERSION }}'
+        env:
+          RENOVATE_PLATFORM_COMMIT: 'true'
+          LOG_LEVEL: 'debug'
+```
